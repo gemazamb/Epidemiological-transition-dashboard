@@ -1,9 +1,13 @@
 
+from pathlib import Path
 import pandas as pd
 import numpy as np
 import plotly.express as px
 import plotly.graph_objects as go
 import streamlit as st
+
+# Ruta del CSV relativa a este archivo (funciona local y en Streamlit Cloud)
+DATA_PATH = Path(__file__).parent / "annual_deaths_by_causes.csv"
 
 import pandas as pd
 import numpy as np
@@ -94,7 +98,13 @@ CAUSES = list(CATEGORY.keys())   # 31 causas (terrorism excluido del total)
 # Carga y limpieza (cacheada)
 # ----------------------------------------------------------------------
 @st.cache_data
-def load_data(path="/Users/gemazambrano/Documents/Proyecto_viz/annual_deaths_by_causes.csv"):
+def load_data(path=DATA_PATH):
+    if not Path(path).exists():
+        st.error(
+            "No se encontró 'annual_deaths_by_causes.csv'. "
+            "Debe estar en el repositorio, en la misma carpeta que app.py."
+        )
+        st.stop()
     df = pd.read_csv(path)
     # tipos
     df["year"] = df["year"].astype(int)
