@@ -8,7 +8,7 @@ Built with **Streamlit + Plotly** for a Data Visualization course project.
 
 ---
 
-## 📸 Preview
+## Preview
 
 > _Add a screenshot or GIF here (e.g. `assets/dashboard.png`)._
 
@@ -21,7 +21,7 @@ assets/
 
 ---
 
-## ✨ Features
+## Features
 
 - **Styled KPI cards** with borders, color accents, icons, and change-vs-baseline indicators.
 - **Tab 1 — Overview & Trends:** dynamic insight callout, stacked-area composition over time, a "biggest movers" panel, and a multi-select cause-trend line chart.
@@ -32,7 +32,7 @@ assets/
 
 ---
 
-## 📊 Dataset
+##  Dataset
 
 `annual_deaths_by_causes.csv` — annual estimated deaths by cause and entity.
 
@@ -52,7 +52,7 @@ assets/
 
 ---
 
-## 🧹 Data preprocessing & derived attributes
+##  Data preprocessing & derived attributes
 
 Cleaning steps performed in the app:
 
@@ -73,7 +73,7 @@ Derived attributes created for the visualizations:
 
 ---
 
-## 🎯 Tasks (abstract → domain)
+## Tasks (abstract → domain)
 
 Following the Brehmer & Munzner task typology:
 
@@ -86,7 +86,7 @@ Following the Brehmer & Munzner task typology:
 
 ---
 
-## 🚀 Getting started
+## Getting started
 
 ### Requirements
 - Python 3.9+
@@ -118,7 +118,7 @@ plotly
 
 ---
 
-## 🗂️ Project structure
+## Project structure
 ```
 epidemiological-transition-dashboard/
 ├── app.py                        # Streamlit dashboard
@@ -130,7 +130,7 @@ epidemiological-transition-dashboard/
 
 ---
 
-## 🎨 Design decisions (short version)
+##  Design decisions (short version)
 
 - **Stacked area** shows total *and* composition at once — magnitude is read by length/height, a high-precision channel, unlike animated pie charts (angle/area).
 - **Choropleth + percentage** answers the spatial "where?" using prior geographic knowledge; the percentage (not raw counts) prevents large-population countries from dominating the map.
@@ -139,7 +139,7 @@ epidemiological-transition-dashboard/
 
 ---
 
-## 📚 References
+##  References
 
 - Munzner, T. (2014). *Visualization Analysis and Design.* CRC Press.
 - Brehmer, M., & Munzner, T. (2013). *A Multi-Level Typology of Abstract Visualization Tasks.* IEEE TVCG.
@@ -149,10 +149,10 @@ epidemiological-transition-dashboard/
 
 ---
 
-## 📝 License
+##  License
 
 Released under the MIT License. The underlying data belongs to IHME / Our World in Data under their respective terms.
 
-## 👤 Author
+##  Author
 
-Created for the **Data Visualization** course. Maintainer: _your name here_.
+Created for the **Data Visualization** course . Maintainer: Gema Zambrano and Emilio Quimis.
