@@ -10,7 +10,7 @@ Built with **Streamlit + Plotly** for a Data Visualization course project.
 
 ## Preview
 
-> _Add a screenshot or GIF here (e.g. `assets/dashboard.png`)._
+> ![Dashboard elaborated](Images/General_detail.png "Presentation")
 
 ```
 assets/
