@@ -124,7 +124,7 @@ epidemiological-transition-dashboard/
 ├── app.py                        # Streamlit dashboard
 ├── annual_deaths_by_causes.csv   # dataset (IHME GBD via OWID)
 ├── requirements.txt
-├── images/                       # screenshots / GIFs
+├── images/                       # screenshots 
 └── README.md
 ```
 
@@ -155,4 +155,4 @@ Released under the MIT License. The underlying data belongs to IHME / Our World 
 
 ##  Author
 
-Created for the **Data Visualization** course . Maintainer: Gema Zambrano 
+Created for the **Data Visualization** course by Gema Zambrano and Emilio Quimis
